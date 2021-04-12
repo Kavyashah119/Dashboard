@@ -28,6 +28,25 @@ const Navbar = () => {
                         <FaIcons.FaBars onClick={showSidebar} />
                     </Link>
 
+                    <ul style={{ color: "#fff", marginLeft: "1150px", float: "right", fontSize: "25px" }}>
+                        <FaIcons.FaBell />
+                    </ul>
+
+                    <ul style={{ color: "#fff", marginLeft: "40px", float: "right", fontSize: "25px" }}>
+                        Kavya Shah
+                        </ul>
+
+                    <ul style={{ color: "#fff", marginLeft: "10px", float: "right", fontSize: "25px" }}>
+                        <FaIcons.FaUserCircle />
+                        </ul>
+
+
+
+
+                    <ul style={{ color: "#fff", marginLeft: "10px", float: "right", fontSize: "25px" }}>
+                        <FaIcons.FaSortDown />
+                    </ul>
+
                     <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                         <ul className="nav-menu-items" onClick={showSidebar}>
                             <li className="navbar-toggle">
@@ -51,6 +70,7 @@ const Navbar = () => {
                                 })}
                             </li>
                         </ul>
+
                     </nav>
 
                 </div>
@@ -176,11 +196,13 @@ const Navbar = () => {
 
             </div>
 
+            {/* 2nd row start */}
+
             <div className="row-wrapper">
                 <Card
                     style={{
                         marginLeft: "35vh",
-                        marginTop: "3vh",
+                        marginTop: "2vh",
                         width: 820,
                         backgroundColor: "#fece2f",
                         height: "45vh",
@@ -232,24 +254,62 @@ const Navbar = () => {
 
                                             <Typography>
                                                 <span style={{ float: "right", marginRight: "130px", marginBottom: "20px" }}>Maths</span>
+
+
                                             </Typography>
-
-
-
-
 
                                         </CardContent>
                                     </Card>
 
                                 </div>
-
-
-
-
                             </div>
                         </Typography>
                     </CardContent>
                 </Card>
+
+                <Card
+                    style={{
+                        marginLeft: "2vh",
+                        marginTop: "2vh",
+                        width: 400,
+                        backgroundColor: "#1AC9E6",
+                        float: 'left',
+                        height: "90vh"
+                    }}
+                >
+                    <CardContent>
+
+                        <Typography variant="h5" component="h2">
+                            HOMEWORK PROGRESS
+                                        </Typography>
+
+                    </CardContent>
+
+                </Card>
+
+            </div>
+
+            <div>
+                <Card
+                    style={{
+                        marginLeft: "35vh",
+                        width: 400,
+                        backgroundColor: "#fd625e",
+                        float: 'left',
+                        marginBottom: "15px",
+                        height: "45vh",
+                        marginTop: "-325px"
+
+                    }}
+                >
+                    <CardContent>
+                        <Typography variant="h5" component="h2">
+                            GRAPH
+                        </Typography>
+                    </CardContent>
+
+                </Card>
+
             </div>
 
         </>
